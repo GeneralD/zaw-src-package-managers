@@ -22,7 +22,7 @@ zplug "GeneralD/zaw-src-package-managers", on:zsh-users/zaw, defer:2
 For oh-my-zsh, clone this repo into ~/.oh-my-zsh/custom/plugins and add plugin as below.
 
 ```zsh
-plugins+=(zaw zaw-src-ghq)
+plugins+=(zaw zaw-src-package-managers)
 ```
 
 ## Dependencies
