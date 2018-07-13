@@ -5,7 +5,7 @@
 function zaw-src-brewcask() {
     local space=$'\uf116'
     local package=$'\uF487'
-    local l=`brew cask search`
+    local l=`brew cask search 2>/dev/null`
     candidates=(`echo $l`)
     cand_descriptions=(`echo $l | sed "s/^/${package}${space}/g"`)
     actions=(zaw-src-brewcask-install zaw-src-brewcask-uninstall zaw-src-brewcask-reinstall zaw-src-brewcask-info zaw-src-brewcask-home)
