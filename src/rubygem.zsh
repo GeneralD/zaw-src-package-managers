@@ -3,7 +3,7 @@
 function zaw-src-rubygem() {
 	local space=$'\uf116'
 	local ruby=$'\ue23e'
-	local l=`gem search -q --no-versions`
+	local l=`gem search -q --no-versions 2>/dev/null`
     candidates=(`echo $l`)
     cand_descriptions=(`echo $l | sed "s/^/${ruby}${space}/g"`)
     actions=(zaw-src-rubygem-install zaw-src-rubygem-uninstall)

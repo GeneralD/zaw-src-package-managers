@@ -3,12 +3,13 @@
 Optional sources of [zaw](https://github.com/zsh-users/zaw) for several package managers:
 
 - Package Managers
- - [rubygem](https://rubygems.org/)
- - [pypi](https://pypi.python.org/pypi)
+ - [rubygem](https://rubygems.org/) (ruby)
+ - [pypi](https://pypi.python.org/pypi) (pyhton)
+ - [clib](https://github.com/clibs/clib) (C)
 - macOS Only
- - [appstore](https://github.com/mas-cli/mas)
- - [homebrew](https://brew.sh/)
- - [brewcask](https://caskroom.github.io/)
+ - [appstore](https://github.com/mas-cli/mas) (Mac App Store)
+ - [homebrew](https://brew.sh/) (Mac CUI App)
+ - [brewcask](https://caskroom.github.io/) (Mac GUI App)
 
 ## Installation
 
