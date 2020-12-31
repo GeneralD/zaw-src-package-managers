@@ -5,7 +5,7 @@
 function zaw-src-brewcask() {
     local space=$'\uf116'
     local package=$'\uF487'
-    local l=`brew cask search`
+    local l=`brew search --casks`
     candidates=(`echo $l`)
     cand_descriptions=(`echo $l | sed "s/^/${package}${space}/g"`)
     actions=(zaw-src-brewcask-install zaw-src-brewcask-uninstall zaw-src-brewcask-reinstall zaw-src-brewcask-info zaw-src-brewcask-home)
@@ -13,27 +13,27 @@ function zaw-src-brewcask() {
 }
 
 function zaw-src-brewcask-install() {
-    BUFFER="brew cask install $1"
+    BUFFER="brew install --cask ${(j:; :)@}"
     zle accept-line
 }
 
 function zaw-src-brewcask-uninstall() {
-    BUFFER="brew cask uninstall $1"
+    BUFFER="brew uninstall --cask ${(j:; :)@}"
     zle accept-line
 }
 
 function zaw-src-brewcask-reinstall() {
-    BUFFER="brew cask reinstall $1"
+    BUFFER="brew reinstall --cask ${(j:; :)@}"
     zle accept-line
 }
 
 function zaw-src-brewcask-info() {
-    BUFFER="brew cask info $1"
+    BUFFER="brew info --cask ${(j:; :)@}"
     zle accept-line
 }
 
 function zaw-src-brewcask-home() {
-    BUFFER="brew cask home $1"
+    BUFFER="brew home ${(j:; :)@}"
     zle accept-line
 }
 
