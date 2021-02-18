@@ -5,7 +5,7 @@
 function zaw-src-homebrew() {
     local space=$'\uf116'
     local beer=$'\uF0FC'
-    local l=`brew search 2>/dev/null`
+    local l=`brew formulae 2>/dev/null`
     candidates=(`echo $l`)
     cand_descriptions=(`echo $l | sed "s/^/${beer}${space}/g"`)
     actions=(zaw-src-homebrew-install zaw-src-homebrew-uninstall zaw-src-homebrew-reinstall zaw-src-homebrew-info zaw-src-homebrew-home)
